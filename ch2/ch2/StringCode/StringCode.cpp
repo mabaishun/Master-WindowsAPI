@@ -10,13 +10,13 @@
 int WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
 {
 	//定义LPWSTR类型的宽字符串
-	LPWSTR szUnicode = L"This is a Unicode String";
+	LPWSTR szUnicode = L"This is a Unicode String;";
 
 	//定义LPSTR类型的窄字符串
-	LPSTR szMutliByte = "This is a Unicode String";
+	LPSTR szMutliByte = "This is not a Unicode String;";
 
 	//定义LPTSTR类型的自使用字符串
-	LPTSTR szString = TEXT("This string is Unicode or not depends on the option");
+	LPTSTR szString = TEXT("This string is Unicode or not depends on the option.");
 
 	//使用W版本的API函数，以宽字符串为参数
 	MessageBoxW(NULL, szUnicode, L"<字符编码1>", MB_OK);
